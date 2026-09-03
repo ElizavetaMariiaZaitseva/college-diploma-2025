@@ -1,0 +1,228 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+}
+.header__img{
+    height: 64px;
+    width: 64px;
+}
+button {
+    border:none;
+    padding: o;
+    background: none;
+}
+
+.footer__img{
+    height: 64px;
+    width: 64px;
+}
+body{
+    background-color: white;
+}
+.zg08I:not(.InX7N)+.zg08I:not(.jmQrf) {
+    margin-top: 60px;
+}
+.zg08I{
+    display:flex
+}
+::backdrop {
+    display: block;
+    position: fixed;
+    top: 0px;
+}
+.FMkqG .e5QaG, .FMkqG .nr7ax {
+    display: flex;
+    flex-direction: column;
+}
+.DNhkb{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 20px;
+}
+.esj77{
+    font-family: Afisha Display;
+    font-size: 32px;
+    letter-spacing: -.01em;
+    line-height: 36px;
+}
+Атрибут стиля {
+    row-gap: 4px;
+    column-gap: 4px;
+}
+.ookR3.ookR3.ookR3 {
+    align-self: flex-end;
+    height: 40px;
+    padding: 11px 12px 11px 16px;
+}
+.L_ilg:not(.NzT39):not(:disabled) {
+    cursor: pointer;
+}
+.L_ilg.faVCW {
+    font-size: 13px;
+    line-height: 18px;
+    min-height: 32px;
+    padding: 7px 10px;
+}
+.L_ilg.k27zi {
+    box-shadow: inset 0 0 8px #00000026;
+    color: #000;
+}
+.L_ilg {
+    align-items: center;
+    background-color: unset;
+    border: none;
+    border-radius: 34px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    transition: background-color .2s,box-shadow .2s,color .2s,opacity .2s,outline-width .2s;
+}
+.CiErQ{
+    width: 20px;
+    height: 20px;
+    display:flex;
+    flex-shrink: 0;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+svg {
+    height: 20px;
+    width: 20px;
+}
+.H0UcP {
+    align-items: center;
+    margin-left: auto;
+    padding-left: 16px;
+    row-gap: 4px;
+    column-gap: 4px;
+}
+.J06IE {
+    justify-content: center;
+}
+.rtbal {
+    display: flex;
+}
+.yD3VJ {
+    display: flex;
+    flex-direction: column;
+}
+Атрибут стиля {
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.rtWw5 {
+    display: grid;
+    gap: 36px;
+    grid-template-rows: 1fr 1fr;
+}
+.rIUFv {
+    aspect-ratio: 296/198;
+}
+.QsWic {
+    contain: layout style;
+    position: relative;
+}
+Атрибут стиля {
+    --border-radius: 16px;
+}
+.PwMBX:not(.jWnct) {
+    flex-shrink: 0;
+}
+.O0rRj {
+    height: 100%;
+    width: 100%;
+}
+.v66jD {
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 0;
+}
+.HXRgA, .PwMBX {
+    border-radius: var(--border-radius);
+    position: relative;
+}
+.PwMBX {
+    display: flex;
+    isolation: isolate;
+    overflow: hidden;
+}
+.PwMBX.rmwkz:after {
+    box-shadow: inset 0 0 100px 0 #0000000f;
+}
+.PwMBX.rmwkz:after {
+    border-radius: var(--border-radius);
+    bottom: 0;
+    content: "";
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.j9_7q {
+    pointer-events: none;
+    z-index: 2;
+}
+.FMkqG .nr7ax:first-child:last-child {
+    width: 100%;
+}
+.TSKAc, .j9_7q {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+::backdrop {
+    display: block;
+    position: fixed;
+    top: 0px;
+}
+.MckHJ, .r4PU3 {
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    left: 8px;
+    position: absolute;
+}
+.MckHJ {
+    bottom: 8px;
+    justify-content: flex-end;
+    right: 8px;
+}
+.L_ilg.faVCW.Ws1Xy {
+    min-width: 32px;
+    padding: 6px;
+}
+.L_ilg:not(.NzT39):not(:disabled) {
+    cursor: pointer;
+}
+.L_ilg.faVCW {
+    font-size: 13px;
+    line-height: 18px;
+    min-height: 32px;
+    padding: 7px 10px;
+}
+.L_ilg.tCbLK {
+    background-color: #fff;
+    color: #000;
+}
+.oP17O {
+    flex-shrink: 0;
+    gap: 10px;
+    max-width: var(--page-column);
+    padding-top: 3px;
+}
+.QWR1k, .oP17O {
+    display: flex;
+    flex-direction: column;
+}
+.QWR1k {
+    align-items: flex-start;
+    gap: 4px;
+}
