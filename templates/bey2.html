@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hzz.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="container"></div>
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+
+            </a>
+
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="{{ url_for('index') }}" class="nav-link px-2 text-black">Главная</a></li>
+            <li><a href="{{ url_for('about') }}" class="nav-link px-2 text-black">Концерты</a></li>
+            <li><a href="{{ url_for('teatr') }}" class="nav-link px-2 text-black">Театр</a></li>
+              <li><a href="{{ url_for('conc') }}" class="nav-link px-2 text-black">Кино</a></li>
+          </ul>
+             <div class="col-md-3 text-end">
+
+          </div>
+        </header>
+        {% block body %}{% endblock %}
+
+    <div class="content-block lh-24" itemscope="" itemtype="http://schema.org/Event">
+    <div class="show-header mb-3 mb-md-4">
+                                <div class="d-sm-none mb-1">
+                <a class="text-primary-link" href="/sportivnye-kompleksy/cska-arena/">
+                    ЦСКА Арена                    <div itemprop="location" itemscope="" itemtype="http://schema.org/Place">
+                        <meta itemprop="name" content="ЦСКА Арена">
+                                                <meta itemprop="address" content="Москва, ул. Автозаводская, 23А">
+                    </div>
+                    <meta itemprop="startDate" content="2025-05-24T13:00:00+03:00">
+                    <meta itemprop="endDate" content="2025-11-30T19:00:00+03:00">
+                </a>
+            </div>
+
+
+                <div class="d-flex justify-content-between align-items-start">
+            <div>
+                <h1 class="mts-compact text-medium text-base lh-28 "  data-js="title" itemprop="name">Billie Eilish</h1>
+            </div>
+            <div class="d-flex justify-content-between align-items-center position-relative ml-3">
+                            </div>
+        </div>
+            </div>
+
+    <div class="show-grid">
+                <div class="image">
+            <div class="show-image flexslider flexslider-show no-border" data-js="flexslider-show">
+                <div class="notice-overlay" data-js="wishlist-notice">
+                    <div class="notice-overlay__text">Шоу добавлено в избранное</div>
+                </div>
+
+
+
+                                    <li itemscope="" itemtype="http://schema.org/ImageObject" style="width: 391.9375px; margin-right: 0px; float: left; display: block;" class="clone" aria-hidden="true">
+                                        <img data-test="IMAGE ITEM-IMAGE" width="1120" height="630" src="/static/img/bil3.jpeg" loading="lazy" decoding="async">
+
+                        </li></ul></div><ol class="flex-control-nav flex-control-paging"><li></li><li class="flex-nav-prev"><a class="flex-prev" href="#"></a></li><li class="flex-nav-next"><a class="flex-next" href="#"></a></li></ul></div>
+        </div>
+        </div>
+
+
+
+</div>
+<div class="performances performances_new d-block" data-js="tab-ajax-content" data-name="performance" style="display: none;">
+
+
+<section class="performances-wrapper performances-wrapper--scrolling no-scrollbar" data-js="performances-scroll" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px -16px 0px 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: auto; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px 16px 0px 0px;">
+    <div data-js="no-performances" style="display: none;">
+        <p class="mb-3 mt-3">Нет мероприятий</p>
+    </div>
+
+
+        <div class="list-performances__month mb-4" data-month="8">
+            <h2 class="performance-month-header pl-2" id="month_8">
+    Сентябрь</h2><article class="show-card  show-card--active" data-weekday="6" data-day="16" data-month="8" data-year="25" data-sold-out="false" data-js="show-card" itemprop="subEvent" itemscope="" itemtype="http://schema.org/Event">
+
+
+    <div class="show-card__col show-card__col--start">
+
+        <a class="fs-17 text-medium"  itemprop="startDate" content="2025-08-16T19:00:00+03:00">
+                            15 сентября 2025                <span class="text-secondary"><span style="color:#ed1f24; font-size: inherit;">пн</span></span>
+                <br>
+                19:00                    </a>
+
+
+
+        <a  class="show-card__place mt-2 text-black" itemprop="location" itemscope="" >
+                                                                <b itemprop="name">Москва</b>,
+                                        <span itemprop="name">
+                Концертный зал            </span>
+
+
+
+                    </a>
+    </div>
+    <div class="show-card__col show-card__col--end" itemprop="offers" itemscope="" >
+                            <a href="{{ url_for('bey3') }}" class="show-card__btn btn btn--mts btn--dark px-0" itemprop="url" data-js="show-btn" data-performance-id="6082232" data-cross-el-event="vntPurch" data-cross-el-category="product_card" data-cross-el-action="button_click" data-cross-el-label="kupit_bilet" data-cross-el-context="2025-08-16 19:00" data-cross-el-content="null">
+                Купить билет            </a>
+
+                <div class="show-card__price mt-2">
+        <meta itemprop="priceCurrency" content="RUB">
+                                        <link itemprop="availability" >
+                <meta itemprop="lowPrice" content="1600">
+                <meta itemprop="highPrice" content="10000">
+                <span itemprop="price" content="1600">
+                &nbsp;10&nbsp;000&nbsp;₽                </span>
+                    </div>
+            </div>
+</article>        </div>
+
+
+        <div class="list-performances__month mb-4" data-month="10">
+            <h2 class="performance-month-header pl-2" id="month_10">
+    </h2>       </div>
+
+
+        <div class="list-performances__month mb-4" data-month="11">
+            <h2 class="performance-month-header pl-2" id="month_11">
+    </h2>    </div>
+
+            </div>
+</div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 200px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar simplebar-visible" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar simplebar-visible" style="height: 68px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></section>
+
+
+
+<div class="description" data-js="tab-ajax-content" data-name="desc" style="">
+
+<h2 class="mts-compact text-bold">Описание</h2>
+<div class="mb-3 mb-md-4">
+    </div>
+
+<div class="formatted-text mts-text">
+
+<div id="showDescription" itemprop="description">
+    <p>🔥 Billie Eilish возвращается с новым туром в 2025 году! 🔥</p><p>Билли Айлиш — молодая американская певица, внезапно и, кажется, надолго приковавшая к себе внимание как зрителей, так и музыкальных критиков.</p><p>20 апреля 2025 года был анонсирован новый альбом Билли Айлиш "Happier Than Ever". 15 апреля в соцсетях певица анонсировала мировой концертный тур в поддержку нового альбома — "Happier Than Ever, The World Tour". Промо-ролик тура собрал более 3-х миллионов просмотров на YouTube. Всего было запланировано 50 концертов. Старт продаж билетов стартовал 1 мая. Из-за большого спроса на билеты в тур был добавлен дополнительный концерт.</p>
+</div>
+<button id="toggleShowDescription" class="btn btn--light btn--font-compact border-radius-3 no-border w-100 mt-3" style="display: none;">Показать ещё</button>
+
+
+
+
+
+<div class=" reviews" data-js="tab-ajax-content" data-name="reviews" style="display: none;">
+    </div>
+
+    </div>
+</div>
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <img class="footer__img" src="..." alt="">
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary"></span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <img class="footer__img" src="..." alt="">
+
+    </ul>
+  </footer>
+    </div>
+</body>
+</html>

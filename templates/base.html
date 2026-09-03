@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="container"></div>
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+
+
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="{{ url_for('index') }}" class="nav-link px-2 text-black">Главная</a></li>
+            <li><a href="{{ url_for('about') }}" class="nav-link px-2 text-black">Концерты</a></li>
+            <li><a href="{{ url_for('teatr') }}" class="nav-link px-2 text-black">Театр</a></li>
+               <li><a href="{{ url_for('conc') }}" class="nav-link px-2 text-black">Кино</a></li>
+          </ul>
+
+          <div class="col-md-3 text-end">
+            <button><a class="btn btn-dark" href="{{ url_for('register') }}">Регистрация</a>
+            <button><a class="btn btn-dark" href="/my_account">Мой аккаунт</a>
+          </div>
+        </header>
+        {% block body %}{% endblock %}
+
+    <div class="events-feed__title">
+        <div class="i-react yandex-sans font-antialiased title-with-more-link-react i-bem title-with-more-link-react_js_inited" nuz2hmeerawy="{&quot;title-with-more-link-react&quot;:{&quot;props&quot;:{&quot;title&quot;:&quot;События в ближайшие дни&quot;,&quot;hasMore&quot;:true,&quot;link&quot;:&quot;/moscow/selections/nearest-events&quot;,&quot;metrikaEntry&quot;:{&quot;context&quot;:[&quot;rubric&quot;,&quot;main&quot;,&quot;landing&quot;,&quot;selection_feed_pos_2&quot;,&quot;nearest-events&quot;,&quot;title&quot;]},&quot;statEntry&quot;:{&quot;context&quot;:[&quot;rubric&quot;,&quot;selection_feed&quot;],&quot;parent_context&quot;:null,&quot;selection&quot;:{&quot;code&quot;:&quot;nearest-events&quot;,&quot;tagCode&quot;:&quot;nearest-events&quot;,&quot;position&quot;:2},&quot;action&quot;:&quot;click.all&quot;},&quot;data-test-id&quot;:&quot;eventsFeed.title&quot;},&quot;lang&quot;:&quot;ru&quot;,&quot;ab&quot;:{&quot;dont_give_up&quot;:&quot;on&quot;,&quot;show_flat_order_info&quot;:&quot;off&quot;,&quot;replace_client_key&quot;:&quot;6f39671c-5112-4e7e-ba28-ba0850ac895e&quot;,&quot;hallplan_cache_ttl&quot;:&quot;30000&quot;,&quot;plus_movie_upsale_holidays_texts&quot;:&quot;off&quot;,&quot;hallscheme_marks_clustering&quot;:&quot;on&quot;,&quot;new_calendar&quot;:&quot;on&quot;,&quot;import_schedules_disable&quot;:&quot;on&quot;,&quot;import_schedules_disable_ids&quot;:&quot;belcantofund,meloman,afishanovgorod,yeltsin-center,yeltsin_center,sputnik8,claustrophobia,top-kvestov,top_kvestov,kinopoisk,kinoplatform,afisha,yabilet-other,yabilet_other,kinopasta,kinopasta-kz,kinopasta-ru,kinopasta-spb,kinopasta-russia,kinopasta-msk,kinopasta_kz,kinopasta_ru,kinopasta_spb,kinopasta_russia,kinopasta_msk,yabilet-movie,yabilet_movie,yabilet&quot;,&quot;high_demand_event_ids&quot;:&quot;496500,528063,527868,528064,527869,527880,527863,509030,527864,528065,527892,527865,527866,527920,527921,527867,527932,528057,590547,590495,634305,634314,634315,634317,634318&quot;,&quot;cheburashka_seats_ids&quot;:&quot;400103,347642,474019&quot;,&quot;hide_rating_ids&quot;:&quot;668d4d367c82470052dbda9b,66e3d9ac221a25004ab007b0,66c85dcd4b3a7000519f5e28&quot;,&quot;sale_complete_exp_banner&quot;:&quot;on&quot;,&quot;iterative_loader&quot;:&quot;off&quot;,&quot;punk_seats_ids&quot;:&quot;431483,431302&quot;,&quot;punk_header_ids&quot;:&quot;365092,445715,445904&quot;,&quot;google_pay_kz&quot;:&quot;off&quot;,&quot;google_pay_merchant_id&quot;:&quot;774382388513650245&quot;,&quot;promocode_debounce_timeout&quot;:&quot;1000&quot;,&quot;mayor_grom_banner_event_id&quot;:&quot;514037&quot;,&quot;mamm_events&quot;:&quot;516313, 654425&quot;,&quot;mamm_venue&quot;:&quot;70646&quot;,&quot;percent_earn_up_to&quot;:&quot;50&quot;,&quot;afisha_white_list&quot;:&quot;off&quot;,&quot;disable_spending_monzana_points_at_dinamo&quot;:&quot;off&quot;,&quot;main_page_selections&quot;:&quot;expand_collapsed&quot;,&quot;updated_nspk_banner&quot;:&quot;on&quot;,&quot;cold_start&quot;:&quot;off&quot;,&quot;bat_seats_ids&quot;:&quot;571963&quot;,&quot;crime_and_punishment_banner_event_id&quot;:&quot;552262&quot;,&quot;new_plus_points_banner&quot;:&quot;off&quot;,&quot;rubric_top_events_theatre_and_kids&quot;:&quot;theatre&quot;,&quot;promo_fullscreen&quot;:&quot;on&quot;,&quot;refund_insurance&quot;:&quot;on&quot;,&quot;update_personal_data&quot;:&quot;on&quot;},&quot;ssr&quot;:true}}">
+            <div class="PIjaX6">
+                <a class="uQrvBL k9fecw">
+                    <div class="RL1opl" data-test-id="eventsFeed.title" id="selection_title_События_в_ближайшие_дни">События в ближайшие дни
+                        <span class="poVB8R">&nbsp;
+                            <svg width="11" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="taxU89" data-test-id="eventsFeed.arrow" d="M1.5 16.5L9 9 1.5 1.5" stroke="#000" stroke-width="2.5" stroke-linecap="round"></path></svg></span></div></a></div></div></div>
+    <section class="DNhkb" aria-label="Кино" role="section" data-test="SECTION">
+        <div class="yD3VJ" data-test="SECTION-CONTENT" style="row-gap: 20px; column-gap: 20px;">
+            <div class="J9HhL slider" role="list" data-test="SLIDER" style="row-gap: 16px; column-gap: 16px;">
+                <div class="oP17O" role="listitem" title="Ходячий замок" aria-label="Ходячий замок" data-test="ITEM">
+                    <div class="QsWic rIUFv"><a class="CjnHd y8A5E Vrui1" data-test="LINK ITEM-URL" href="hod">
+                        <picture class="PwMBX PpVCr rmwkz v66jD O0rRj" data-img="true" style="--border-radius: 16px;">
+                            <img data-test="IMAGE ITEM-IMAGE" width="296" height="198" src="{{ url_for('static', filename='img/zamok.jpeg')}}" loading="lazy" decoding="async" ></picture></a>
+                        <div class="j9_7q">
+                            <div class="r4PU3">
+                                <div class="IrSqF KDBPA BNjPz k96pX" aria-label="Рейтинг: 12+" data-test="RATING">12+</div></div></div></div>
+                    <div class="QWR1k" data-test="ITEM-INFO">
+                        <a class="CjnHd y8A5E nbCNS yknrM" data-test="LINK ITEM-NAME ITEM-URL" href="hod">Ходячий замок</a>
+                        <div class="S_wwn" data-test="ITEM-META">Мультфильм</div></div></div>
+                <div class="oP17O" role="listitem" title="Лебединое озеро" aria-label="Леб" data-test="ITEM">
+                    <div class="QsWic rIUFv">
+                        <a class="CjnHd y8A5E Vrui1" data-test="LINK ITEM-URL" href="leb1">
+                            <picture class="PwMBX PpVCr rmwkz v66jD O0rRj" data-img="true" style="--border-radius: 16px;">
+                                <img data-test="IMAGE ITEM-IMAGE" width="296" height="198" src="{{ url_for('static', filename='img/leb.jpeg')}}" loading="lazy" decoding="async" ></picture></a>
+                        <div class="j9_7q">
+                            <div class="r4PU3">
+                                <div class="IrSqF KDBPA BNjPz k96pX" aria-label="Рейтинг: 6+" data-test="RATING">6+</div></div>
+                            <div class="MckHJ"></div></div></div>
+                    <div class="QWR1k" data-test="ITEM-INFO">
+                        <a class="CjnHd y8A5E nbCNS yknrM" data-test="LINK ITEM-NAME ITEM-URL" href="leb1">Лебединое озеро</a>
+                        <div class="S_wwn" data-test="ITEM-META">Балет</div></div></div>
+                <div class="oP17O" role="listitem" title="Мой сосед Тоторо" aria-label="Мой сосед Тоторо" data-test="ITEM">
+                    <div class="QsWic rIUFv">
+                        <a class="CjnHd y8A5E Vrui1" data-test="LINK ITEM-URL" href="5ss">
+                            <picture class="PwMBX PpVCr rmwkz v66jD O0rRj" data-img="true" style="--border-radius: 16px;">
+                                <img data-test="IMAGE ITEM-IMAGE" width="296" height="198" src="{{ url_for('static', filename='img/totoro.jpeg')}}" loading="lazy" decoding="async" ></picture></a>
+                        <div class="j9_7q">
+                            <div class="r4PU3">
+                                <div class="IrSqF KDBPA BNjPz k96pX" aria-label="Рейтинг: 6+" data-test="RATING">6+</div></div>
+                            <div class="MckHJ"></div></div></div>
+                    <div class="QWR1k" data-test="ITEM-INFO">
+                        <a class="CjnHd y8A5E nbCNS yknrM" data-test="LINK ITEM-NAME ITEM-URL" href="5ss">Мой сосед Тоторо</a>
+                        <div class="S_wwn" data-test="ITEM-META">Мультфильм</div></div></div>
+                <div class="oP17O" role="listitem" title="Унесенные призраками" aria-label="Унесенные призраками" data-test="ITEM">
+                    <div class="QsWic rIUFv"><a class="CjnHd y8A5E Vrui1" data-test="LINK ITEM-URL" href="ypriz">
+                        <picture class="PwMBX PpVCr rmwkz v66jD O0rRj" data-img="true" style="--border-radius: 16px;">
+                            <img data-test="IMAGE ITEM-IMAGE" width="296" height="198" src="{{ url_for('static', filename='img/haku.jpeg')}}" loading="lazy" decoding="async"></picture></a>
+                        <div class="j9_7q">
+                            <div class="r4PU3">
+                                <div class="IrSqF KDBPA BNjPz k96pX" aria-label="Рейтинг: 12+" data-test="RATING">12+</div></div>
+                            <div class="MckHJ"></div></div></div>
+                    <div class="QWR1k" data-test="ITEM-INFO">
+                        <a class="CjnHd y8A5E nbCNS yknrM" data-test="LINK ITEM-NAME ITEM-URL" href="ypriz">Унесенные призраками</a>
+                        <div class="S_wwn" data-test="ITEM-META">Мультфильм</div></div></div>
+                <div class="oP17O" role="listitem" title="Билли Айлиш" aria-label="Билли" data-test="ITEM">
+                    <div class="QsWic rIUFv"><a class="CjnHd y8A5E Vrui1" data-test="LINK ITEM-URL" href="bey1">
+                        <picture class="PwMBX PpVCr rmwkz v66jD O0rRj" data-img="true" style="--border-radius: 16px;">
+                            <img data-test="IMAGE ITEM-IMAGE" width="296" height="198" src="{{ url_for('static', filename='img/bil1.jpeg')}}" loading="lazy" decoding="async" ></picture></a>
+                        <div class="j9_7q">
+                            <div class="r4PU3">
+                                <div class="IrSqF KDBPA BNjPz k96pX" aria-label="Рейтинг: 12+" data-test="RATING">12+</div></div></div></div>
+                    <div class="QWR1k" data-test="ITEM-INFO">
+                        <a class="CjnHd y8A5E nbCNS yknrM" data-test="LINK ITEM-NAME ITEM-URL" href="bey1">Billie Eilish</a>
+                        <div class="S_wwn" data-test="ITEM-META">Концерт</div></div></div></div></div></section>
+
+
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+            <img src="{{ url_for('static', filename='img/tet4.jpeg')}}" class="d-block w-100" alt="...">
+          <h2>Театральные постановки для всей семьи!</h2>
+          <p></p>
+          <button type="button"><a class="btn btn-outline-light" href="{{ url_for('teatr') }}">Узнать больше </a></button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <img src="{{ url_for('static', filename='img/gh.jpeg')}}" class="d-block w-100" alt="...">
+          <h2>Все актуальные новинки киноиндустрии ждут вас!</h2>
+          <p></p>
+          <button  type="button"><a class="btn btn-outline-dark" href="{{ url_for('conc') }}">Узнать больше </a></button>
+        </div>
+      </div>
+    </div>
+     <div class="bg-body-tertiary p-5 rounded">
+    <h1>Уважаемые покупатели! </h1>
+    <p class="lead">Оплата забронированных билетов производится только в кассе в день события. К сожалению, оплата на сайте невозможна. </p>
+                    <p class = "lead">Актуальные билеты и бронирование доступно после регистрации.</p>
+    <a class="btn btn-dark" href="/register" role="button">Регистрация</a>
+  </div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="mb-3 mb-md-0 text-body-secondary"></span>
+                </div>
+
+            </footer>
+
+
+  </footer>
+    </div>
+</body>
+</html>

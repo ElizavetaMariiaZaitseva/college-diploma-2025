@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bd.css') }}">
+<head>
+    <title>Мероприятия - {{ category }}</title>
+</head>
+<body>
+    <h1>Мероприятия</h1>
+    <table border="1">
+        <tr>
+            <th>Название</th>
+            <th>Дата</th>
+            <th>Цена билета</th>
+            <th>Доступно билетов</th>
+            <th>Действие</th>
+        </tr>
+        {% for event in events %}
+        <tr>
+            <td>{{ event.name }}</td>
+            <td>{{ event.date }}</td>
+            <td>{{ event.price }} руб.</td>
+            <td>{{ event.available_tickets }} из {{ event.total_tickets }}</td>
+            <td><a href="{{ url_for('book', event_id=event.id) }}">Забронировать</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

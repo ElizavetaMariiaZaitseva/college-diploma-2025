@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Бронирование билетов</title>
+</head>
+<body>
+    <h1>Бронирование билетов: {{ event.name }}</h1>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+        <p>
+            <label>Количество билетов:</label>
+            <input type="number" name="tickets_count" min="1" max="{{ event.available_tickets }}" required>
+        </p>
+        <button type="submit">Забронировать</button>
+    </form>
+    <button><a class="btn btn-primary" href="/register">Регистрация</a></button>
+    <button><a class="btn btn-primary" href="{{ url_for('index') }}">Назад к списку мероприятий</a></button>
+</body>
+</html>
